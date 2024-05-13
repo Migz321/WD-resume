@@ -1,0 +1,26 @@
+@import url('https://fonts.googleleapis.com/css2?family=Inter;wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+   --primary-color: #ff7613;
+   --text-color: #727171;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* layouts */
+.container  {
+    max-width: 100px;
+    width: 90%;
+}
