@@ -1,5 +1,4 @@
-@import url('https://fonts.googleleapis.com/css2?family=Inter;wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
 *{
     padding: 0;
@@ -7,20 +6,50 @@
     box-sizing: border-box;
 }
 :root{
-   --primary-color: #ff7613;
-   --text-color: #727171;
+    --primary-color: #ff7613;
+    --text-color: #727171;
 }
-html{
+html {
     font-size: 10px;
 }
-body{
-    font-family: Inter, sans-serif;
-    background-color: black;
+body {
+    font-family: inter, sans-serif;
+    background-color: rgb(165, 216, 228);
     color: white;
 }
 
-/* layouts */
-.container  {
+/* common styles */
+img { 
+    width: 300%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* layout */
+.container {
     max-width: 100px;
     width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background:  rgb(165, 216, 228);
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
 }
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 1005;
+        grid-template-columns: 1fr;
+        padding 2rem;
+        gap: 7rem;
+    }
+}
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+
+/
